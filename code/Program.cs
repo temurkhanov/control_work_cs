@@ -20,3 +20,22 @@ for (int i = 0; i < input_data_size; i++)
         match_string_adress[i] = false;
     }
 }
+if (match_count > 0)
+{
+    Console.WriteLine("");
+    if (match_count == 1)
+    {
+        Console.WriteLine("String that matches the required string length is:");
+    }
+    else
+    {
+        Console.WriteLine("Strings that match the required string length are:");
+    }
+    for (int i = 0; i < input_data_size; i++)
+    {
+        if (match_string_adress[i])
+        {
+            Console.WriteLine(input_data[i]);
+        }
+    }
+}
