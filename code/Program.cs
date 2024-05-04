@@ -70,7 +70,7 @@ data_input:
 }
 bool CheckIfMatch(string input_string, int comp_value)
 {
-    if (input_string.Length == comp_value)
+    if (input_string.Length <= comp_value)
     {
         return true;
     }
