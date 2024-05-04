@@ -27,3 +27,11 @@ data_input:
         return input_string;
     }
 }
+bool CheckIfMatch(string input_string, int comp_value)
+{
+    if (input_string.Length == comp_value)
+    {
+        return true;
+    }
+    return false;
+}
